@@ -1,0 +1,47 @@
+*{
+  scroll-behavior: smooth;
+}
+.font-Lato{
+  font-family: 'lato';
+}
+
+
+.raw{
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  gap: 24px;
+}
+.active{
+  background-color: #e6f1f2 !important;
+  color: #000000 !important;
+  border-color:#0e7a81!important;
+  border-radius: 30px !important;
+}
+
+
+
+.btn{
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  border: 1px solid #dbebec !important;
+}
+
+.modal-action {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center !important;
+}
+
+.btn-1 {
+  background-color: #e6f1f2;
+  border: 0.5px solid #bbd9dc;
+  border-radius: 8px;
+  padding: 0.5rem 12rem;
+}
+
+@media screen and (max-width: 600px) {
+  .raw{
+    display: grid;
+    grid-template-columns: 1fr;
+  } 
+}

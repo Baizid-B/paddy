@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy</title>
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/x-icon">
+
+    <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- google font -->
+
+    <!-- style -->
+      <link rel="stylesheet" href="./css/style.css">
+    <!-- style -->
+
+    <!-- Fontawesome setup -->
+    <script src="https://kit.fontawesome.com/a58ad42c64.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome setup -->
+
+
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUi CDN -->
+
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Tailwind Play CDN -->
+</head>
+<body class="font-Lato">
+    <header class="mt-8 mb-14">
+        <nav class="w-11/12 mx-auto flex justify-between items-center">
+            <div class="logo flex items-center gap-3">
+                <img src="./assets/logo.webp" alt="">
+                <h1 class="font-extrabold text-2xl">Peddy</h1>
+            </div>
+            <div>
+                <ul class="items-center gap-8 text-lg hidden lg:!flex">
+                    <li class="cursor-pointer">Home</li>
+                    <li class="cursor-pointer">Shop</li>
+                    <li class="cursor-pointer">Contact</li>
+                </ul>
+            </div>
+            <div class="text-2xl border rounded-full px-3 py-2 cursor-pointer"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+        </nav>
+    </header>
+    <!-- header is end -->
+
+    <main class="w-11/12 mx-auto">
+
+        <section class="text-center">
+            <h1 class="mb-5 text-[#717171]"> Bringing Families Together ❤️‍🔥</h1>
+            <h1 class="text-6xl font-extrabold text-center mb-5">Your Path to Adoption <br> Starts Here</h1>
+    
+            <p class="w-3/6 mx-auto mb-8"> 
+                It is a long established fact that a 
+                reader will be distracted by the readable
+                content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a.
+            </p>
+    
+            <button class="py-3 px-4 bg-[#0e7a81] text-[#ffffff] rounded-lg text-sm font-semibold">
+              <a href="#paddycategories">View More</a>
+            </button>
+
+            <img class="mx-auto mt-14" src="./assets/pet.webp" alt="">
+        </section>
+        <!-- Banner Section -->
+
+        <section class="mb-8">
+            <h1 class="text-4xl font-extrabold text-center mt-24 mb-4">Adopt  Your  Best Friend</h1>
+
+            <p class="text-center mb-12"> 
+                It is a long established fact that a 
+                reader will be distracted by the readable
+                content of a <br> page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a.
+            </p>
+
+            <div id="paddycategories" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 p-4 "></div>
+
+            <div class="flex flex-col lg:flex-row gap-8 lg:justify-between items-center my-8 ">
+                <h1 class="font-extrabold text-xl">Best Deal For you</h1>
+                <button class="py-4 px-8 bg-[#0e7a81] text-[#ffffff] rounded-lg text-lg font-semibold">Sort by Price</button>
+            </div>
+
+            <div class="raw">
+              <!-- loader -->
+              <div id="loader" class="hidden">
+                <div class="relative flex justify-center items-center">
+                  <div class="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-teal-700"></div>
+                  <img src="./assets/logo.webp" alt="">
+                </div>
+               </div>
+              <!-- loader -->
+
+              <div id="All_categories_pet" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 "></div>
+
+              <div id="loadlikeBtn" class="grid grid-cols-2 auto-rows-min border gap-2 p-5 rounded-xl"></div> 
+              <!-- /*self-start, h-fit, auto-rows-min*/ -->
+            </div>
+        </section>
+        <!-- Adopt Section -->
+        
+
+              <!-- Dateils-Modal -->
+                  <!-- Open the modal using ID.showModal() method -->
+                  <button id="showModalData" class="btn hidden" onclick="customModal.showModal()"></button>
+                  <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box w-5/6 mx-auto mb-12">
+                      <div id="modal-content">
+                      </div>
+                    </div>
+                  </dialog>
+              <!-- Dateils-Modal -->
+
+
+              <!-- Adopt-Modal -->
+                  <!-- Open the modal using ID.showModal() method -->
+                  <button id="showModalData" class="btn hidden" onclick="customModal2.showModal()"></button>
+                  <dialog id="customModal2" class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box w-5/6 mx-auto mb">
+                      <div id="modal-content2">
+                      </div>
+                    </div>
+                  </dialog>
+              <!-- Adopt-Modal -->
+
+
+
+              
+
+    </main>
+    <!-- Banner Section -->
+
+    <footer class="bg-[#131313] text-white py-24">
+        <div class="w-11/12 mx-auto justify-between footer">
+            <nav>
+                <div class="logo flex items-center gap-3 mb-6">
+                    <img src="./assets/logo.webp" alt="">
+                    <h1 class="font-extrabold text-2xl">Peddy</h1>
+                </div>
+                <a class="link link-hover">Location: av. Washington 165, NY CA 54003</a>
+                <a class="link link-hover">Phone: +31 85 964 47 25</a>
+                <a class="link link-hover">Email: info@yourdomain.com</a>
+                <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+
+                <div class="flex justify-between items-center w-6 gap-6 mt-4">
+                    <img class="cursor-pointer" src="./assets/Facebook-Logo-icon.png" alt="">
+
+                    <img class="cursor-pointer" src="./assets/x-logo-icon.png" alt="">
+
+                    <img class="cursor-pointer" src="./assets/youtube-logo-icon.webp" alt="">
+
+                    <img class="cursor-pointer" src="./assets/instagram-logo-icon.png" alt="">
+                </div>
+              </nav>
+
+              <nav>
+                <h6 class="footer-title capitalize">Useful Links</h6>
+
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Animals</a>
+                <a class="link link-hover">Foundation</a>
+                <a class="link link-hover">Contact</a>
+              </nav>
+
+              <form>
+                <h6 class="footer-title capitalize">Drop a Message</h6>
+                <fieldset class="form-control w-60">
+                  <input type="text" placeholder="Enter your email" class="input input-bordered mb-4 bg-[#1f1f1f]"/>
+                  <button class="p-3 rounded-lg bg-[#0e7a81]">Subscribe</button>
+                </fieldset>
+              </form>
+        </div>
+      </footer>
+
+    <!-- script -->
+    <script src="./js/Allcategoriespet.js"></script>
+    <script src="./js/loader.js"></script>
+    <!-- script -->
+
+</body>
+</html>
